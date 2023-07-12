@@ -9,7 +9,6 @@ function App() {
     if (localValue == null) return [];
     return JSON.parse(localValue);
   });
-  // const [todos, setTodos] = useState([]);
 
   function addTodo(task) {
     if (!task) return;
