@@ -28,10 +28,10 @@ function App() {
   }, [todos]);
 
   return (
-    <>
+    <div className="box-border ">
       <Form onSubmit={addTodo} />
       <List todoList={todos} deleteAction={deleteTodo} />
-    </>
+    </div>
   );
 }
 
