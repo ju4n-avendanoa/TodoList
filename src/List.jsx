@@ -10,7 +10,7 @@ export default function List(props) {
           {props.todoList.length === 0 && "No ToDos"}
         </p>
         {props.todoList.map((todo, index) => (
-          <div className="flex items-center gap-3 py-3">
+          <div className="flex items-center gap-3 py-3" key={index}>
             <li className="text-white text-xl mx-3" id="todo" key={index}>
               {todo}
             </li>
